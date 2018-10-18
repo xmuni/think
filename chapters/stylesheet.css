@@ -1,0 +1,17 @@
+body
+{
+	font-family: arial, verdana;
+	/*font-size: 1.1rem;*/
+	line-height: 1.5;
+	max-width: 960px;
+	margin: auto;
+	padding: 40px;
+	background: #343d46;
+	color: #ddd;
+}
+
+a
+{
+	color: orange;
+	text-decoration: none;
+}
