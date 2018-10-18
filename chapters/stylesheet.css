@@ -15,3 +15,8 @@ a
 	color: orange;
 	text-decoration: none;
 }
+
+img
+{
+	max-width: 680px;
+}
