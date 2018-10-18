@@ -3,7 +3,7 @@ body
 	font-family: arial, verdana;
 	font-size: 1.1rem;
 	line-height: 1.5;
-	max-width: 640px;
+	max-width: 600px;
 	margin: auto;
 	padding: 40px;
 	background: #343d46;
@@ -18,5 +18,5 @@ a
 
 img
 {
-	max-width: 640px;
+	max-width: 600px;
 }
