@@ -54,12 +54,29 @@ for filename in os.listdir('./chapters'):
         oldhtml = file.read()
         file.close()
 
-        if titleline in oldhtml:
-            file = open('./chapters/'+filename, 'w+', encoding='UTF-8')
-            newhtml = oldhtml.replace(titleline, '<title>{} {}</title>'.format(counter+1, title_array[counter]))
-            file.write(newhtml)
-            file.close()
-            print(filename+': title replaced')
+        # if titleline in oldhtml:
+        #     file = open('./chapters/'+filename, 'w+', encoding='UTF-8')
+        #     newhtml = oldhtml.replace(titleline, '<title>{} {}</title>'.format(counter+1, title_array[counter]))
+        #     file.write(newhtml)
+        #     file.close()
+        #     print(filename+': title replaced')
+
+        # file = open('./chapters/'+filename, 'w+', encoding='UTF-8')
+        # splitter = "<?xml version='1.0' encoding='utf-8'?>"
+        # newhtml = splitter+oldhtml.split(splitter)[1]
+        # file.write(newhtml)
+        # file.close()
+        # print(filename+' fixed')
+
+        file = open('./chapters/'+filename, 'w+', encoding='UTF-8')
+        text = '''</body>
+  <html>
+    <p>P</p>
+  </html>'''
+        newhtml = oldhtml.replace(text, '')
+        file.write(newhtml)
+        file.close()
+        print(filename+' modified')
 
         counter+=1
 
